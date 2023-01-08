@@ -1,0 +1,325 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0, 0, 1, 1) ;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+  
+    
+}
+
+.backdrop__window{
+    
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 528px;
+    height: 582px;
+    background-color: #FFFFFF;
+    padding: 40px;
+  
+   position: relative;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: opacity 250ms cubic-bezier(0, 0, 1, 1) ;
+    @media screen and (max-width: 1200px){
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+        max-width: 450px;
+        height: 609px;
+       
+       
+    }
+    // @media screen and (min-width: 1200px){
+    //     .backdrop__window{
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);}
+    // }
+    
+
+
+    
+}
+.backdrop__window-close-svg{
+top: 0;
+right: 0;
+&:hover{
+    fill: #2196F3;
+}
+
+}
+.backdrop__window-close-btn{
+    width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.1);
+display: flex;
+align-items: center;
+justify-content: center;
+background: #FFFFFF;
+align-content: center;
+position: absolute;
+right: 8px;
+top: 8px;
+cursor: pointer;
+
+}
+
+.backdrop__window-words{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+
+letter-spacing: 0.03em;
+
+text-align: center;
+color: #212121;
+display: block;
+margin-bottom: 12px;
+
+}
+
+.window-form__modal-input{
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+   
+    padding-left: 42px;
+    background: #FFFFFF;
+    font-size: 12px;
+    transition: border-color 500ms linear;
+    @media screen and (max-width: 1200px){
+        width: 370px;
+
+    }
+    &:focus{
+    
+   
+        border: 1px solid rgba(33, 150, 243, 0.8);
+    }
+    &:focus-visible{
+        outline: none;
+    }
+    
+    &:focus + svg {
+        fill: rgba(33, 150, 243, 0.9);
+    }
+
+}
+.window-form__modal{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+letter-spacing: 0.01em;
+
+
+color: #757575;
+
+margin-bottom: 10px;
+
+    &-box{
+        margin-bottom: 20px;
+    }
+    & label{
+        display: block;
+        margin-bottom: 4px;
+    
+}
+}
+
+
+.window-form__modal-text{
+    width: 448px;
+    height: 120px;
+display: block;
+resize: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 12px;
+    padding-top: 12px;
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    transition: border-color 500ms linear;
+    @media screen and (max-width: 1200px){
+        width: 370px;
+        
+    }
+    &:focus-visible{
+        outline: none;
+    }
+    &:focus{
+        
+       
+        border: 1px solid rgba(33, 150, 243, 0.8);
+    }
+}
+
+
+
+label.window-form__modal-checkbox-label{
+    display: flex;
+    
+   
+}
+.window-form__modal-checkbox-label::before{
+    width: 16px;
+    height: 16px;
+    content: "";
+    border: 2px solid rgba(33, 33, 33,1);
+    border-radius: 2px;
+    margin-right: 10px;
+   margin-top: 2px;
+ 
+    
+
+}
+.window-form__modal-checkbox-politick:checked + label::before{
+border: none;
+background-color: rgba(33, 150, 243, 0.8);
+background-image: url(../img/img2/Vector-3.svg);
+background-repeat: no-repeat;
+background-position: center;
+margin-right: 10px;
+
+
+
+}
+.hide-backdrop{
+    opacity: 0;
+    position: absolute; width: 1px; height: 1px;
+}
+
+.brbr{
+    margin-left: 15px;
+}
+
+
+.backdrop__window-btn{
+
+    margin: 15px auto 0;
+    padding: 10px 56px;
+      
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        /* identical to box height, or 188% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        border: none;
+        
+        color: #FFFFFF;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+
+.footer-modal{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+.footer-modal-box{
+    display: flex;
+    
+    margin-left: 93px;
+}
+.modal-imput-footer{
+    width: 358px;
+    height: 50px;
+   
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    font-size: 12px;
+    background: #2F303A;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+   
+}
+.btn-footer{
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: 0;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-left: 12px;
+    margin-top: 36px;
+    cursor: pointer;
+}
+.icon-btn-footer{
+    margin-left: 30px;
+}
+.window-form__modal-wrapper{
+    position: relative;
+}
+.window-form__modal-checkbox{
+    position: relative;
+}
+.window-form__modal-svg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    transition: fill 500ms linear;
+}

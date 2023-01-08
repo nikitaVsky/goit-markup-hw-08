@@ -1,0 +1,50 @@
+
+    .aside__list{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+
+
+    }
+    @media screen and (max-width: 1200px) {
+       .aside{
+       display: none;
+        width: 0;
+        height: 0;
+       }
+       }
+   
+    .aside__pict{
+        margin-right: 30px;
+        display: flex;
+    position: relative;
+    &:last-child{
+        margin-right: 0;
+    }
+    }
+
+    
+    .aside__offers{
+        bottom: 27px;
+        position: absolute;
+        font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    
+    color: #FFFFFF;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    
+    
+    
+    }
+    

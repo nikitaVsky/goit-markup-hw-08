@@ -1,0 +1,114 @@
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.hero__words{
+    width: 360px;
+   
+  
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+    
+    color: #FFFFFF;
+   
+       @media screen and (min-width: 480px){
+        
+       
+        
+       }
+       @media screen and (min-width: 1200px){
+        font-size: 44px;
+        width: 700px;
+        
+       }
+    }
+    
+    .hero__btn{
+
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        /* identical to box height, or 188% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        color: #FFFFFF;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        
+        }
+        .hero__btn-position{
+
+        margin: 0 auto ;
+        }
+
+    .hero{
+
+        padding-top: 200px;
+        padding-bottom: 200px;
+     
+   background-color: #C4C4C4;
+
+   
+
+background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/img2/tel\ img-2.png), ;
+   
+
+   
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+//    @media  screen and (min-width: 768px){
+   
+//     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(/img/img2/tab\ img.png) ;
+    
+//    }
+//    @media screen and (min-width: 1200px){
+   
+//     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/img2/Img-17.png) ;
+//    }
+  
+   @media screen and (max-width: 1200px){
+    padding-top: 118px;
+    padding-bottom: 118px;
+ 
+   }
+             }
+             @media 
+             screen and (min-width: 1200px),
+             screen and (min-device-pixel-ratio: 2)
+           
+            
+             {
+  .hero {
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/img-2x/Header\ img.jpg) ;
+  }
+}
+@media screen and (max-width: 1200px),
+screen and (min-device-pixel-ratio: 2) {
+.hero {
+  background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/img-2x/Header\ tab\ 2x.jpg) ;
+}
+}
+@media screen and (max-width: 768px),
+screen and (min-device-pixel-ratio: 2) {
+.hero {
+  background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/img-2x/Header\ tel\ 2x.jpg) ;
+}
+}

@@ -1,0 +1,118 @@
+.info__list{
+   
+    
+    @media screen and (min-width: 768px){
+        width: 100%;
+        display: flex;
+    justify-content: center;
+    }
+    @media screen and (max-width: 1200px){
+        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    @media screen and (min-width: 1200px){
+
+gap: 30px;
+
+    }
+}
+.info__block{
+    width: 270px;
+    width: 100%;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    padding-bottom: 30px;
+    &:not(:last-child){
+        margin-right: 30px;
+
+    }
+   
+}
+@media screen and (min-width: 768px) {
+    .info__block:not(:last-child){
+        margin-right: 0;
+   }
+   .info__block{
+    width: calc((100% - 60px)/2);
+    // width: 354px;
+   }
+   .conteiner{
+    padding: 0 0;
+   }
+}
+
+@media screen and (min-width: 320px) {
+    .info__block:not(:last-child){
+        margin-right: 0;
+   }
+}
+@media screen and (max-width: 764px) {
+    .info__block{
+       width: 100%;
+   }
+}
+@media screen and (min-width: 1200px){
+    .info__block{
+        width: calc((100% - 60px)/4);
+        // width: 354px;
+       }
+   }
+
+
+
+
+.info__icons{
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    width: 100%;
+    // width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    
+   
+}    
+.info{
+    padding: 94px 0 0 0;
+   
+    
+}
+@media screen and (max-width: 1200px){
+    .info{
+    padding: 60px 0 60px 0;}
+}
+
+
+.info__headers{
+    margin-bottom: 15px;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 16px;
+    
+     text-transform: uppercase;
+     
+     color: #212121;
+     @media screen and (max-width: 764px){
+        display: flex;
+        
+        justify-content: center;
+     }
+    }
+   
+    
+    
+     .info__details{
+        font-style: normal;
+        
+        font-size: 14px;
+        
+        /* or 171% */
+      
+        
+        color: #757575;
+        }

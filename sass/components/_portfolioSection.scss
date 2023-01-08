@@ -1,0 +1,227 @@
+
+.portfolio-main__btn{
+    font-family: inherit;
+    color: #212121;
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+
+    transition: color 250ms cubic-bezier(0, 0, 1, 1), background-color 250ms cubic-bezier(0, 0, 1, 1),box-shadow 250ms cubic-bezier(0, 0, 1, 1);
+    
+    padding: 6px 33px;
+
+    border-radius: 4px;
+    &:hover{
+        color: #FFFFFF;
+        background-color: #2196F3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        
+    }
+}
+
+.opportunity__text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &::before{
+        display: inline-block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+        transition: opacity 250ms cubic-bezier(0, 0, 1, 1) ;
+        
+    
+       
+        opacity: 0;
+       
+    }
+   
+    
+    
+ }
+.opportunity-list{
+    width: 370px;
+    @media screen and (max-width: 1200px){
+  width: calc((100% - 60px)/2);
+  margin-left: 15px;
+
+    }
+   
+    @media screen and (max-width: 768px){
+margin-left: 0;
+// width: calc((100% - 60px)/1);
+width: 100%;
+    }
+   
+  
+
+}
+.opportunity__img{
+    
+    border: 1px solid #ececec;
+    padding: 20px 24px 20px 24px;
+    border-top: none;
+    @media screen and (max-width: 1200px){padding: 20px 24px 56px 24px;}
+    @media screen and (max-width: 768px){padding: 20px 24px 20px 24px;}
+}
+.opportunity-list__value{
+    border: 1px solid #ececec;
+    padding: 20px 24px;
+    border-top: none;
+    @media screen and (max-width: 1200px){
+      
+      padding: 20px 24px 20px 24px;
+    }
+}
+.portfolio-main__btn-list{
+    margin: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    @media screen and (max-width: 768px){
+        justify-content: left;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+
+.opportunity__link{
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0, 0, 1, 1) ;
+   
+}
+.opportunity__link:hover {
+   
+    
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+
+
+.picture-name{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: unset;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.opportunity__link:hover .opportunity__text-styles{
+   
+
+    opacity: 1;
+ }
+ .opportunity__link:hover .opportunity__text::before{
+ opacity: 1;
+ 
+    
+
+ }
+
+.opportunity__text-styles{
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    /* or 156% */
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+    opacity: 0;
+    width: 322px;
+    height: 140px;
+    transition: opacity 250ms cubic-bezier(0, 0, 1, 1) ;
+    
+
+}
+
+
+.opportunity{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 30px;
+    width: 100%;
+   
+}
+// @media screen and (max-width: 1200px){
+//     .opportunity{
+
+//     }}
+
+// @media screen and (max-width: 768px){
+//     .opportunity{
+// justify-content: center;
+//     }}
+// @media screen and (min-width: 480px){
+//     .opportunity{
+
+
+// flex-wrap: wrap;
+//  display: flex;
+// //  width: calc((100% - 60px)/2);
+// margin-right: 0;
+// }
+// }
+// @media screen and (min-width: 768px){
+//     .opportunity{
+// justify-content: center;
+// display: flex;
+// // justify-content: center;
+// flex-wrap: wrap;
+// align-items: center;
+
+//     }
+// }
+// @media screen and (min-width: 1200px){
+//     .opportunity{
+// display: flex;
+// justify-content: center;
+//     }
+// }
+.opportunity__img-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+   
+    color: #212121;}
+    .opportunity__img-prop{
+        font-style: normal;
+       
+        font-size: 16px;
+        line-height: 1.88;
+        /* identical to box height, or 188% */
+       
+       
+        color: #757575;
+        }
+        .porftolio-mail__conteiner{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+      
